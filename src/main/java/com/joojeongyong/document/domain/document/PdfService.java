@@ -1,12 +1,16 @@
 package com.joojeongyong.document.domain.document;
 
-import org.springframework.core.io.Resource;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDPage;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PdfService {
 
-    public Resource getPdf() {
-        return null;
-    }
+  public PDDocument getPdf() {
+    PDDocument document = new PDDocument();
+    document.addPage(new PDPage());
+    document.addPage(new PDPage());
+    return document;
+  }
 }

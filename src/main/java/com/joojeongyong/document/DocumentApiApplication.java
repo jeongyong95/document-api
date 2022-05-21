@@ -1,4 +1,4 @@
-package com.joojeongyong.document.api;
+package com.joojeongyong.document;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
